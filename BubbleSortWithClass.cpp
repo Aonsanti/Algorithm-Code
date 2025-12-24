@@ -1,6 +1,6 @@
 #include <iostream>
 //Big O(n**2)
-int BubbleSort(int n , int arr[]){
+void BubbleSort(int n , int arr[]){
     for(int i = 0 ; i < n ; i++){
         for(int j = 0 ; j < n ; j++){
             if(arr[j] > arr[j+1]){
@@ -12,7 +12,7 @@ int BubbleSort(int n , int arr[]){
     }
 }
 //Big O(n)
-int PrintArray(int arr[] , int n){
+void PrintArray(int arr[] , int n){
     for(int i = 0 ; i < n ; i++){
         std::cout << arr[i] << " ";
     }
